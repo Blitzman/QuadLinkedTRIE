@@ -13,33 +13,33 @@ class QuadLinkedTrieNode
 		QuadLinkedTrieNode();
 		~QuadLinkedTrieNode();
 
-		T* Value() const;
-		char Key() const;
-		bool IsWord() const;
-		QuadLinkedTrieNode<T>* Parent() const;
-		QuadLinkedTrieNode<T>* Previous() const;
-		QuadLinkedTrieNode<T>* Next() const;
-		QuadLinkedTrieNode<T>* Child() const;
+		T* value() const;
+		char key() const;
+		bool isWord() const;
+		QuadLinkedTrieNode<T>* parent() const;
+		QuadLinkedTrieNode<T>* left() const;
+		QuadLinkedTrieNode<T>* right() const;
+		QuadLinkedTrieNode<T>* child() const;
 
-		void Value(const T &);
-		void Value(T *);
-		void Key(const char &);
-		void IsWord(const bool &);
-		void Parent(QuadLinkedTrieNode<T>*);
-		void Previous(QuadLinkedTrieNode<T>*);
-		void Next(QuadLinkedTrieNode<T>*);
-		void Child(QuadLinkedTrieNode<T>*);
+		void value(const T &);
+		void value(T *);
+		void key(const char &);
+		void isWord(const bool &);
+		void parent(QuadLinkedTrieNode<T>*);
+		void left(QuadLinkedTrieNode<T>*);
+		void right(QuadLinkedTrieNode<T>*);
+		void child(QuadLinkedTrieNode<T>*);
 
 	private:
 
-		bool isWord;
-		char key;
-		T* value;
+		bool mIsWord;
+		char mKey;
+		T* mValue;
 
-		QuadLinkedTrieNode<T>* parent;
-		QuadLinkedTrieNode<T>* previous;
-		QuadLinkedTrieNode<T>* next;
-		QuadLinkedTrieNode<T>* child;
+		QuadLinkedTrieNode<T>* mParent;
+		QuadLinkedTrieNode<T>* mLeft;
+		QuadLinkedTrieNode<T>* mRight;
+		QuadLinkedTrieNode<T>* mChild;
 };
 
 #endif
