@@ -77,56 +77,56 @@ QuadLinkedTrieNode<T>* QuadLinkedTrieNode<T>::child() const
 }
 
 template <class T>
-void QuadLinkedTrieNode<T>::value(T *v)
+void QuadLinkedTrieNode<T>::value(T * pValue)
 {
-	mValue = v;
+	mValue = pValue;
 }
 
 template <class T>
-void QuadLinkedTrieNode<T>::value(const T &v)
+void QuadLinkedTrieNode<T>::value(const T & pValue)
 {
 	if (mValue)
 		delete mValue;
 	else 
 		mValue = new T();
 
-	(*mValue) = v;
+	(*mValue) = pValue;
 }
 
 template <class T>
-void QuadLinkedTrieNode<T>::key(const char &c)
+void QuadLinkedTrieNode<T>::key(const char & pKey)
 {
-	mKey = c;
+	mKey = pKey;
 }
 
 template <class T>
-void QuadLinkedTrieNode<T>::isWord(const bool &e)
+void QuadLinkedTrieNode<T>::isWord(const bool & pIsWord)
 {
-	mIsWord = e;
+	mIsWord = pIsWord;
 }
 
 template <class T>
-void QuadLinkedTrieNode<T>::parent(QuadLinkedTrieNode<T> *p)
+void QuadLinkedTrieNode<T>::parent(QuadLinkedTrieNode<T> * pParent)
 {
-	mParent = p;
+	mParent = pParent;
 }
 
 template <class T>
-void QuadLinkedTrieNode<T>::left(QuadLinkedTrieNode<T> *hi)
+void QuadLinkedTrieNode<T>::left(QuadLinkedTrieNode<T> * pLeft)
 {
-	mLeft = hi;
+	mLeft = pLeft;
 }
 
 template <class T>
-void QuadLinkedTrieNode<T>::right(QuadLinkedTrieNode<T> *hd)
+void QuadLinkedTrieNode<T>::right(QuadLinkedTrieNode<T> * pRight)
 {
-	mRight = hd;
+	mRight = pRight;
 }
 
 template <class T>
-void QuadLinkedTrieNode<T>::child(QuadLinkedTrieNode<T> *h)
+void QuadLinkedTrieNode<T>::child(QuadLinkedTrieNode<T> * pChild)
 {
-	mChild = h;
+	mChild = pChild;
 }
 
 template class QuadLinkedTrieNode<string>;

@@ -1,0 +1,289 @@
+\hypertarget{classQuadLinkedTrieNode}{\section{Quad\-Linked\-Trie\-Node$<$ T $>$ Class Template Reference}
+\label{classQuadLinkedTrieNode}\index{Quad\-Linked\-Trie\-Node$<$ T $>$@{Quad\-Linked\-Trie\-Node$<$ T $>$}}
+}
+
+
+Single node for a Quad Linked T\-R\-I\-E data structure.  
+
+
+
+
+{\ttfamily \#include $<$Quad\-Linked\-Trie\-Node.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T $\ast$ \hyperlink{classQuadLinkedTrieNode_acac1fe6f910a2c9ac1ec59b3dab0d234}{value} () const 
+\begin{DoxyCompactList}\small\item\em {\bfseries Value getter} \end{DoxyCompactList}\item 
+char \hyperlink{classQuadLinkedTrieNode_adc500de1e3a3e5b49ff3027c17050407}{key} () const 
+\begin{DoxyCompactList}\small\item\em {\bfseries Key getter} \end{DoxyCompactList}\item 
+bool \hyperlink{classQuadLinkedTrieNode_aa1aa3e879d3c1a911c14b91498ae11f4}{is\-Word} () const 
+\begin{DoxyCompactList}\small\item\em {\bfseries Word marker getter} \end{DoxyCompactList}\item 
+\hyperlink{classQuadLinkedTrieNode}{Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$ \hyperlink{classQuadLinkedTrieNode_a18683b74f840c6bb3b755acd58e5e9b3}{parent} () const 
+\begin{DoxyCompactList}\small\item\em {\bfseries Parent getter} \end{DoxyCompactList}\item 
+\hyperlink{classQuadLinkedTrieNode}{Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$ \hyperlink{classQuadLinkedTrieNode_a630a8c0f64aa8684453bd06d579f3365}{left} () const 
+\begin{DoxyCompactList}\small\item\em {\bfseries Left brother getter} \end{DoxyCompactList}\item 
+\hyperlink{classQuadLinkedTrieNode}{Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$ \hyperlink{classQuadLinkedTrieNode_a09d2cf3b6175313271c0f607a870f2c7}{right} () const 
+\begin{DoxyCompactList}\small\item\em {\bfseries Right brother getter} \end{DoxyCompactList}\item 
+\hyperlink{classQuadLinkedTrieNode}{Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$ \hyperlink{classQuadLinkedTrieNode_a386e85a2b259728ec9fbe26907823dcf}{child} () const 
+\begin{DoxyCompactList}\small\item\em {\bfseries Child getter} \end{DoxyCompactList}\item 
+void \hyperlink{classQuadLinkedTrieNode_af5c5a72f9e54f9cac7c59dea467e4586}{value} (const T \&p\-Value)
+\begin{DoxyCompactList}\small\item\em {\bfseries Value value setter} \end{DoxyCompactList}\item 
+void \hyperlink{classQuadLinkedTrieNode_aa0f8a7aee7f4bd401d0eee79448843a0}{value} (T $\ast$p\-Value)
+\begin{DoxyCompactList}\small\item\em {\bfseries Value pointer setter} \end{DoxyCompactList}\item 
+void \hyperlink{classQuadLinkedTrieNode_a41d494eeb9a73539461a6ccacd8a0afd}{key} (const char \&p\-Key)
+\begin{DoxyCompactList}\small\item\em {\bfseries Key setter} \end{DoxyCompactList}\item 
+void \hyperlink{classQuadLinkedTrieNode_ae3ba3402838ed5e85fb888702fcc8670}{is\-Word} (const bool \&p\-Is\-Word)
+\begin{DoxyCompactList}\small\item\em {\bfseries Word marker setter} \end{DoxyCompactList}\item 
+void \hyperlink{classQuadLinkedTrieNode_ae21b708d187d90bf9c6f0c80b7848d0c}{parent} (\hyperlink{classQuadLinkedTrieNode}{Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$p\-Parent)
+\begin{DoxyCompactList}\small\item\em {\bfseries Parent pointer setter} \end{DoxyCompactList}\item 
+void \hyperlink{classQuadLinkedTrieNode_a9c62cb270b607e09e0bd98242a67c2b5}{left} (\hyperlink{classQuadLinkedTrieNode}{Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$p\-Left)
+\begin{DoxyCompactList}\small\item\em {\bfseries Left brother pointer setter} \end{DoxyCompactList}\item 
+void \hyperlink{classQuadLinkedTrieNode_ac068294f42337015dde5695d053869c7}{right} (\hyperlink{classQuadLinkedTrieNode}{Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$p\-Right)
+\begin{DoxyCompactList}\small\item\em {\bfseries Left brother pointer setter} \end{DoxyCompactList}\item 
+void \hyperlink{classQuadLinkedTrieNode_add46f502e721f5cc00a3972d6cbec709}{child} (\hyperlink{classQuadLinkedTrieNode}{Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$p\-Child)
+\begin{DoxyCompactList}\small\item\em {\bfseries Left brother pointer setter} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Quad\-Linked\-Trie\-Node$<$ T $>$}
+
+Single node for a Quad Linked T\-R\-I\-E data structure. 
+
+This class represents a quad linked T\-R\-I\-E single node which holds a character key and a certain type value for that node. Moreover, the node contains some references to its parent, the left and right brothers and its first child. In addition, the node can be marked as an actual word in the data structure.
+
+The node offers some functionality to navigate through other related nodes and also obtaining and modifying its value, key and word marker. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQuadLinkedTrieNode_a386e85a2b259728ec9fbe26907823dcf}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!child@{child}}
+\index{child@{child}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{child}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$ {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::child (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classQuadLinkedTrieNode_a386e85a2b259728ec9fbe26907823dcf}
+
+
+{\bfseries Child getter} 
+
+Gets the child node of the current one. \begin{DoxyReturn}{Returns}
+A node pointer to the child of the current node. 
+\end{DoxyReturn}
+\hypertarget{classQuadLinkedTrieNode_add46f502e721f5cc00a3972d6cbec709}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!child@{child}}
+\index{child@{child}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{child}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::child (
+\begin{DoxyParamCaption}
+\item[{{\bf Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$}]{p\-Child}
+\end{DoxyParamCaption}
+)}}\label{classQuadLinkedTrieNode_add46f502e721f5cc00a3972d6cbec709}
+
+
+{\bfseries Left brother pointer setter} 
+
+Sets the pointer to the child node. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Child} & The pointer to the new child node. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQuadLinkedTrieNode_aa1aa3e879d3c1a911c14b91498ae11f4}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!is\-Word@{is\-Word}}
+\index{is\-Word@{is\-Word}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{is\-Word}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::is\-Word (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classQuadLinkedTrieNode_aa1aa3e879d3c1a911c14b91498ae11f4}
+
+
+{\bfseries Word marker getter} 
+
+Gets the state of the word marker of the node. \begin{DoxyReturn}{Returns}
+True if the node represents a word, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classQuadLinkedTrieNode_ae3ba3402838ed5e85fb888702fcc8670}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!is\-Word@{is\-Word}}
+\index{is\-Word@{is\-Word}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{is\-Word}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::is\-Word (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{p\-Is\-Word}
+\end{DoxyParamCaption}
+)}}\label{classQuadLinkedTrieNode_ae3ba3402838ed5e85fb888702fcc8670}
+
+
+{\bfseries Word marker setter} 
+
+Sets the word marker state of the current node. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Is\-Word} & A boolean representing the new word marker state. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQuadLinkedTrieNode_adc500de1e3a3e5b49ff3027c17050407}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!key@{key}}
+\index{key@{key}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{key}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ char {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classQuadLinkedTrieNode_adc500de1e3a3e5b49ff3027c17050407}
+
+
+{\bfseries Key getter} 
+
+Gets the key of the current node. \begin{DoxyReturn}{Returns}
+The character that represents the key of the node. 
+\end{DoxyReturn}
+\hypertarget{classQuadLinkedTrieNode_a41d494eeb9a73539461a6ccacd8a0afd}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!key@{key}}
+\index{key@{key}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{key}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::key (
+\begin{DoxyParamCaption}
+\item[{const char \&}]{p\-Key}
+\end{DoxyParamCaption}
+)}}\label{classQuadLinkedTrieNode_a41d494eeb9a73539461a6ccacd8a0afd}
+
+
+{\bfseries Key setter} 
+
+Sets the key of the current node. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Key} & A character representing the new key. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQuadLinkedTrieNode_a630a8c0f64aa8684453bd06d579f3365}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!left@{left}}
+\index{left@{left}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$ {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classQuadLinkedTrieNode_a630a8c0f64aa8684453bd06d579f3365}
+
+
+{\bfseries Left brother getter} 
+
+Gets the left brother node of the current one. \begin{DoxyReturn}{Returns}
+A node pointer to the left brother of the current node. 
+\end{DoxyReturn}
+\hypertarget{classQuadLinkedTrieNode_a9c62cb270b607e09e0bd98242a67c2b5}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!left@{left}}
+\index{left@{left}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::left (
+\begin{DoxyParamCaption}
+\item[{{\bf Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$}]{p\-Left}
+\end{DoxyParamCaption}
+)}}\label{classQuadLinkedTrieNode_a9c62cb270b607e09e0bd98242a67c2b5}
+
+
+{\bfseries Left brother pointer setter} 
+
+Sets the pointer to the left brother node. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Left} & The pointer to the new left brother node. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQuadLinkedTrieNode_a18683b74f840c6bb3b755acd58e5e9b3}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!parent@{parent}}
+\index{parent@{parent}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$ {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classQuadLinkedTrieNode_a18683b74f840c6bb3b755acd58e5e9b3}
+
+
+{\bfseries Parent getter} 
+
+Gets the parent node of the current one. \begin{DoxyReturn}{Returns}
+A node pointer to the parent of the current node. 
+\end{DoxyReturn}
+\hypertarget{classQuadLinkedTrieNode_ae21b708d187d90bf9c6f0c80b7848d0c}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!parent@{parent}}
+\index{parent@{parent}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::parent (
+\begin{DoxyParamCaption}
+\item[{{\bf Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$}]{p\-Parent}
+\end{DoxyParamCaption}
+)}}\label{classQuadLinkedTrieNode_ae21b708d187d90bf9c6f0c80b7848d0c}
+
+
+{\bfseries Parent pointer setter} 
+
+Sets the pointer to the parent node. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Parent} & The pointer to the new parent node. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQuadLinkedTrieNode_a09d2cf3b6175313271c0f607a870f2c7}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!right@{right}}
+\index{right@{right}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{right}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$ {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classQuadLinkedTrieNode_a09d2cf3b6175313271c0f607a870f2c7}
+
+
+{\bfseries Right brother getter} 
+
+Gets the right brother node of the current one. \begin{DoxyReturn}{Returns}
+A node pointer to the right brother of the current node. 
+\end{DoxyReturn}
+\hypertarget{classQuadLinkedTrieNode_ac068294f42337015dde5695d053869c7}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!right@{right}}
+\index{right@{right}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{right}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::right (
+\begin{DoxyParamCaption}
+\item[{{\bf Quad\-Linked\-Trie\-Node}$<$ T $>$ $\ast$}]{p\-Right}
+\end{DoxyParamCaption}
+)}}\label{classQuadLinkedTrieNode_ac068294f42337015dde5695d053869c7}
+
+
+{\bfseries Left brother pointer setter} 
+
+Sets the pointer to the right brother node. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Right} & The pointer to the new right brother node. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQuadLinkedTrieNode_acac1fe6f910a2c9ac1ec59b3dab0d234}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!value@{value}}
+\index{value@{value}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T $\ast$ {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classQuadLinkedTrieNode_acac1fe6f910a2c9ac1ec59b3dab0d234}
+
+
+{\bfseries Value getter} 
+
+Gets the value of the current node. \begin{DoxyReturn}{Returns}
+A pointer to the value which is stored in the current node. 
+\end{DoxyReturn}
+\hypertarget{classQuadLinkedTrieNode_af5c5a72f9e54f9cac7c59dea467e4586}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!value@{value}}
+\index{value@{value}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::value (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{p\-Value}
+\end{DoxyParamCaption}
+)}}\label{classQuadLinkedTrieNode_af5c5a72f9e54f9cac7c59dea467e4586}
+
+
+{\bfseries Value value setter} 
+
+Sets the value's value to the specified one. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Value} & A value to set the node value's value to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQuadLinkedTrieNode_aa0f8a7aee7f4bd401d0eee79448843a0}{\index{Quad\-Linked\-Trie\-Node@{Quad\-Linked\-Trie\-Node}!value@{value}}
+\index{value@{value}!QuadLinkedTrieNode@{Quad\-Linked\-Trie\-Node}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Quad\-Linked\-Trie\-Node}$<$ T $>$\-::value (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{p\-Value}
+\end{DoxyParamCaption}
+)}}\label{classQuadLinkedTrieNode_aa0f8a7aee7f4bd401d0eee79448843a0}
+
+
+{\bfseries Value pointer setter} 
+
+Sets the value's pointer to the specified one. 
+\begin{DoxyParams}{Parameters}
+{\em p\-Value} & A pointer to the new value. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/albert/\-Documents/\-Temp\-Work/\-Otros/\-Quad\-Linked\-T\-R\-I\-E/include/\hyperlink{QuadLinkedTrieNode_8h}{Quad\-Linked\-Trie\-Node.\-h}\item 
+/home/albert/\-Documents/\-Temp\-Work/\-Otros/\-Quad\-Linked\-T\-R\-I\-E/lib/Quad\-Linked\-Trie\-Node.\-cpp\end{DoxyCompactItemize}
